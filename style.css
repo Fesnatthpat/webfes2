@@ -283,7 +283,7 @@ nav {
 
 @media screen and (max-width: 430px) {
     .nav-con {
-        padding: 12px;
+        padding: 12px 0;
     }
 
     .items-con {
