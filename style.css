@@ -80,13 +80,10 @@ nav {
 /* hammenu */
 
 .ham-nenu {
-    display: none;
     cursor: pointer;
     position: absolute;
     right: 1rem;
-    display: block;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .bar1,
@@ -114,9 +111,7 @@ nav {
     transform: translate(0, -11px) rotate(45deg);
 }
 
-.menu-active {
-    display: block !important;
-}
+
 
 .hero-con1 {
     background-image: url(https://images.unsplash.com/photo-1507676385008-e7fb562d11f8?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
@@ -323,6 +318,13 @@ nav {
     box-shadow: 0 0 10px gray;
 }
 
+@media screen and (max-width: 1900px) {
+    .ham-nenu {
+        display: none;
+    }
+}
+
+
 @media screen and (max-width: 430px) {
     .nav-con {
         padding: 12px 20px;
@@ -333,12 +335,20 @@ nav {
 
     }
 
-    .ham-nenu, .bar1{
-        
+    .menu-active {
+        display: block;
+    }
+
+    .ham-nenu,
+    .bar1 {
+
         margin: 0 auto;
     }
 
-    .nav-con ul, li, a {
+
+    .nav-con ul,
+    li,
+    a {
         text-decoration: none;
         list-style: none;
         color: #000;
