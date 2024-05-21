@@ -30,6 +30,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     /* padding: 12px; */
     /* height: 70%; */
 
@@ -74,6 +75,47 @@ nav {
     display: block;
     text-decoration: none;
     padding: 0 20px;
+}
+
+/* hammenu */
+
+.ham-nenu {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.menu-active {
+    display: block !important;
 }
 
 .hero-con1 {
@@ -281,9 +323,35 @@ nav {
     box-shadow: 0 0 10px gray;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 350px) {
     .nav-con {
-        padding: 12px 0;
+        padding: 12px 20px;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        /* justify-content: center; */
+
+    }
+
+    .ham-nenu, .bar1{
+        
+        margin: 0 auto;
+    }
+
+    .nav-con ul, li, a {
+        text-decoration: none;
+        list-style: none;
+        color: #000;
+        padding: 8px 0;
+    }
+
+    .menu-icon {
+        display: none;
+        /* flex-direction: column; */
+    }
+
+    .ham-nenu {
+        display: inline-block;
     }
 
     .items-con {
@@ -370,7 +438,5 @@ nav {
         height: 200px;
     }
 
-    .con-products001 {
-        /* width: 500px; */
-    }
+
 }
