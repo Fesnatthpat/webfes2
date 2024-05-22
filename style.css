@@ -261,27 +261,6 @@ nav {
     grid-row: 2 / 3;
 }
 
-.navbar-top-prod {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid black;
-}
-
-.menus-prod ul {
-    display: flex;
-}
-
-.menus-prod ul li {
-    padding: 12px;
-    list-style: none;
-}
-
-.menus-prod ul li a {
-    text-decoration: none;
-    color: #000;
-}
-
 .products-con {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
