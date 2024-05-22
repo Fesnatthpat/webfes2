@@ -318,7 +318,7 @@ nav {
     box-shadow: 0 0 10px gray;
 }
 
-@media screen and (max-width: 1900px) {
+@media screen and (min-width: 430px) {
     .ham-nenu {
         display: none;
     }
